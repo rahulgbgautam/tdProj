@@ -1,0 +1,356 @@
+/*1. @media screen and (min-width:0\0)
+- IE
+
+2. @media screen and (-webkit-min-device-pixel-ratio:0)
+- Chrome/Safari
+
+3. @media screen and (min-width: 1780px) and (max-width: 1980px)
+- Larger Screens
+
+4. @media screen and (min-width: 1500px) and (max-width: 1600px)
+- Larger Screens
+
+5. @media screen and (max-width : 1280px)
+- Macbook and other devices
+
+6. @media screen and (max-width : 1024px)
+- iPad devices Landscape
+
+7. @media screen and (max-width : 991px)
+- Tabs and Tablets Landscape
+
+8. @media screen and (max-width : 800px)
+- iPad Potrait and other devices
+
+9. @media screen and (max-width : 767px)
+- iPhone 6Plus/Nexus 6 Landscape
+
+10. @media screen and (max-width : 680px)
+- iPhone 6 Landscape
+
+11. @media screen and (max-width : 580px)
+- iPhone 5 Landscape
+
+12. @media screen and (max-width : 480px)
+- iPhone 4 Landscape and iPhone 6/6Plus Potrait
+
+13. @media screen and (max-width : 420px)
+- iPhone 6/6Plus Potrait/Nexus 5/Samsung Galaxy Potrait
+
+*/
+
+@media screen and (max-width : 1280px) {
+	.navbar {
+		padding: 10px 15px;
+	}
+
+	.report-box h4 {
+		line-height: 24px;
+		padding: 0 0 14px;
+		min-height: 70px;
+	}
+
+	.list-box li {
+		line-height: 24px;
+		min-height: 50px;
+	}
+
+	.list-box li:not(:last-child) {
+		margin-bottom: 14px;
+	}
+}
+
+@media screen and (max-width : 1190px) {
+	.sidebar-folded:not(.open-sidebar-folded) .sidebar {
+		margin-left: -256px;
+	}
+
+	.sidebar {
+		margin-left: 0px;
+	}
+
+	.sidebar-folded .main-wrapper .page-wrapper {
+		margin: 0px;
+		width: 100%;
+	}
+
+	.sidebar-folded .page-wrapper .navbar {
+		width: 100%;
+		left: 0px;
+	}
+
+	.navbar .sidebar-toggler {
+		display: block;
+		padding: 21px 20px 21px 0px;
+	}
+
+	.sidebar-toggler i {
+		background-image: none;
+		background-color: #3F98B8;
+		display: block;
+		height: 2px;
+		width: 25px;
+		margin: 6px 0;
+		position: relative;
+		transition: 0.3s;
+	}
+
+	.sidebar-toggler i::before,
+	.sidebar-toggler i::after {
+		content: '';
+		background-image: none;
+		background-color: #3F98B8;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+	}
+
+	.sidebar-toggler i::before {
+		top: -6px;
+	}
+
+	.sidebar-toggler i::after {
+		bottom: -6px;
+	}
+
+	.navbar .navbar-brand {
+		margin: 0 auto 0 20px;
+		order: 1;
+	}
+
+	.navbar .navbar-content {
+		order: 2;
+	}
+}
+
+@media screen and (max-width : 1024px) {}
+
+@media screen and (max-width : 991px) {
+
+	.navbar {
+		position: relative;
+	}
+
+	.navbar .navbar-brand {
+	    max-width: 120px;
+	}
+
+	.sidebar-open .main-wrapper::before,
+	.settings-open .main-wrapper::before {
+		/* display: none; */
+	}
+
+	.sidebar {
+		margin-left: -260px;
+	}
+
+	.main-wrapper .page-wrapper {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.main-wrapper .page-wrapper .page-content {
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width : 800px) {}
+
+@media screen and (max-width : 767px) {
+
+	.navbar .sidebar-toggler {
+		padding: 21px 14px 21px 0px;
+	}
+
+	.navbar .navbar-brand {
+		margin: 0 auto 0 14px;
+		max-width: 145px;
+		max-height: 70px;
+	}
+
+	.navbar .navbar-content {
+		width: 54%;
+	}
+
+	.navbar .navbar-content p {
+		font-size: 12px;
+		width: 50%;
+	}
+
+	.navbar .navbar-content .btn {
+	    font-size: 10px;
+	    margin-left: 8px;
+	    padding: 0 5px;
+	    min-width: 100px;
+	}
+
+	.main-wrapper .page-wrapper .page-content {
+		padding: 25px 15px;
+	}
+
+	.report-box {
+		display: block !important;
+	}
+
+	.report-box h4 {
+		min-height: inherit;
+	}
+
+	.list-box {
+		padding: 16px 12px;
+	}
+
+	.list-box li {
+		font-size: 13px;
+		line-height: 26px;
+		min-height: 26px;
+	}
+
+	.list-box li:not(:last-child) {
+		margin-bottom: 8px;
+	}
+
+	.list-box li span {
+		top: 0;
+	}
+
+	.rating-box {
+		border-radius: 0 10px 10px 0;
+		max-width: 100%;
+	}
+
+	.table tbody td {
+		font-size: 12px;
+		line-height: 29px;
+		padding: 7px 16px;
+		height: 45px;
+	}
+
+	.table tbody td img {
+		width: 26px;
+		height: 26px;
+		margin-right: 15px;
+	}
+
+	.profile-section .report-box {
+		padding: 34px 16px 20px;
+	}
+
+	.profile-content {
+		padding: 0;
+		width: 100%;
+	}
+
+	.profile-content p.message-text {
+		margin-top: 0;
+		position: absolute;
+		top: 4px;
+		right: 15px;
+	}
+
+	.profile-content h3 {
+		font-size: 22px;
+		line-height: 26px;
+		padding: 10px 0 6px;
+	}
+
+	.profile-content p {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 0 0 8px;
+	}
+
+	.purchase-box>.d-flex {
+		display: block !important;
+	}
+
+	.purchase-box .right-box {
+		margin: 0 auto;
+		padding-left: 0;
+	}
+
+	.table {
+	    min-width: 900px;
+	}
+}
+
+@media screen and (max-width: 680px) {}
+
+@media screen and (max-width: 580px) {}
+
+@media screen and (max-width: 509px) {
+	.navbar {
+		padding: 10px 15px;
+		height: inherit;
+	}
+
+	.navbar .sidebar-toggler {
+		padding: 13px 15px 10px 0px;
+		height: 38px;
+	}
+
+	.navbar .navbar-brand {
+		margin: 0;
+	}
+
+	.navbar-brand img {
+		max-width: 135px;
+	}
+
+	.navbar .navbar-content {
+		margin-top: 8px;
+		width: 100%;
+	    height: auto;
+	}
+
+	.navbar .navbar-content p {
+		font-size: 11px;
+	}
+
+	.sidebar .sidebar-body .nav .nav-item .nav-link,
+	.sidebar-folded .sidebar .sidebar-body .nav .nav-item .nav-link {
+		padding: 8px 8px 8px 45px;
+		font-size: 13px;
+		line-height: 26px;
+	}
+
+	.sidebar .sidebar-body .nav .nav-item .nav-link .link-icon {
+		background-size: 22px;
+		top: 8px;
+		width: 24px;
+		height: 26px;
+		left: 12px;
+	}
+
+	.search-box {
+	    width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 420px) {}
+
+@media screen and (max-width: 360px) {
+	.navbar .navbar-content {
+	    text-align: center;
+	}
+
+	.navbar .navbar-content {
+	    display: block !important;
+	}
+
+	.navbar .navbar-content p {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.navbar .navbar-content .btn {
+	    margin: 4px 4px 0;
+	}
+
+	.sidebar, .sidebar-folded:not(.open-sidebar-folded) .sidebar {
+	    margin-top: 118px;
+	}
+}

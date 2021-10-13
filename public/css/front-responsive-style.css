@@ -1,0 +1,514 @@
+/*1. @media screen and (min-width:0\0)
+- IE
+
+2. @media screen and (-webkit-min-device-pixel-ratio:0)
+- Chrome/Safari
+
+3. @media screen and (min-width: 1780px) and (max-width: 1980px)
+- Larger Screens
+
+4. @media screen and (min-width: 1500px) and (max-width: 1600px)
+- Larger Screens
+
+5. @media screen and (max-width : 1280px)
+- Macbook and other devices
+
+6. @media screen and (max-width : 1024px)
+- iPad devices Landscape
+
+7. @media screen and (max-width : 991px)
+- Tabs and Tablets Landscape
+
+8. @media screen and (max-width : 800px)
+- iPad Potrait and other devices
+
+9. @media screen and (max-width : 767px)
+- iPhone 6Plus/Nexus 6 Landscape
+
+10. @media screen and (max-width : 680px)
+- iPhone 6 Landscape
+
+11. @media screen and (max-width : 580px)
+- iPhone 5 Landscape
+
+12. @media screen and (max-width : 480px)
+- iPhone 4 Landscape and iPhone 6/6Plus Potrait
+
+13. @media screen and (max-width : 420px)
+- iPhone 6/6Plus Potrait/Nexus 5/Samsung Galaxy Potrait
+
+*/
+
+@media screen and (max-width : 1280px) {}
+
+@media screen and (max-width : 1180px) {}
+
+@media screen and (max-width : 1024px) {
+    .header-section .navbar-nav .nav-item:not(:last-child) {
+        padding-right: 16px;
+    }
+
+    .feature-section .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .feature-section .row [class*=col-] {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width : 991px) {
+
+    .login-signup-box {
+        background-image: url('../images/login-banner.png');
+        background-size: cover;
+        background-position: center;
+        display: block !important;
+        position: relative;
+        padding-top: 0px;
+    }
+
+    .form-head h1 {
+        padding: 0 0 20px;
+    }
+
+    .form-head h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 50px 20px;
+        /* position: absolute; */
+        background-color: #ffffffd6;
+        height: 100%;
+    }
+
+    .form-box .form-group .form-control {
+        background-color: #ffffff;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 6px;
+    }
+
+    .form-group .form-control {
+        height: 38px;
+    }
+
+    .form-image-box {
+        display: none;
+    }
+
+    .login-signup-box.signup_section {
+        background-image: none;
+    }
+
+    .signup_section .form-box {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .signup_section .form-box .custom-dropdown::after {
+        background-color: #ffffff;
+        height: 36px;
+    }
+
+    .signup_section .form-box > form > .d-flex {
+        flex-flow: column;
+    }
+
+    .signup_section .sub-head h3 {
+        padding: 0 0 10px;
+    }
+
+    .personal-information, .domain-information {
+        padding: 0 0 16px;
+        order: 2;
+    }
+
+    .back-to-login {
+        order: 1;
+        padding: 0px;
+        max-width: 100%;
+        text-align: center;
+        border: 0;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 26px;
+    }
+
+    .signup_section .form-button p {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .form-button {
+        padding: 18px 0 0;
+    }
+
+    .header-section,
+    .header-section.fixed-top {
+        background-color: #ffffff;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        transition: all 0.5s;
+    }
+
+    .header-section .navbar-brand img {
+        max-width: 110px;
+    }
+
+    .header-section .navbar-toggler {
+        order: 2;
+        box-shadow: none !important;
+        padding: 0px;
+    }
+
+    .header-section .navbar-toggler span {
+        background-image: none;
+        background-color: #3F98B8;
+        display: block;
+        height: 2px;
+        width: 25px;
+        margin: 6px 0;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .header-section .navbar-toggler span::before,
+    .header-section .navbar-toggler span::after {
+        content: '';
+        background-image: none;
+        background-color: #3F98B8;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .header-section .navbar-toggler span::before {
+        top: -6px;
+    }
+
+    .header-section .navbar-toggler span::after {
+        bottom: -6px;
+    }
+
+    .header-section .navbar-collapse {
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        left: 0;
+        top: 41px;
+        box-shadow: 0px 4px 6px #6f6f6f;
+    }
+
+    .header-section .navbar-nav {
+        margin: 0;
+        padding: 10px 12px;
+    }
+
+    .header-section .navbar-nav .nav-item:not(:last-child),
+    .header-section .navbar-nav .nav-item {
+        padding: 6px;
+    }
+
+    .header-section .dropdown-toggle::after {
+        right: -20px;
+    }
+
+    .search-banner-section {
+        margin: 0px;
+    }
+
+    .report-box {
+        flex-direction: column;
+    }
+
+    .list-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .report-box h4 {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 0 20px;
+    }
+
+    .list-box li {
+        background-size: 26px;
+        font-size: 16px;
+        padding: 0 30px 0 40px;
+        line-height: 30px;
+    }
+
+    .list-box li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .list-box li span {
+        height: 30px;
+        width: 30px;
+    }
+
+    .list-box li span img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .rating-box {
+        padding: 20px;
+        max-width: 100%;
+        border-top: 1px solid #cccccc;
+    }
+
+    .rating-detail {
+        max-width: 300px;
+        display: inline-block;
+    }
+
+    .signup-free-box {
+        border-radius: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .signup-free-box h4 strong {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .content-box {
+        padding: 0 10px 0 80px;
+        max-width: 400px;
+    }
+
+    .content-box span {
+        width: 70px;
+    }
+
+    .inner-sub-section .image-box {
+        max-width: 360px;
+    }
+
+    .inner-sub-section .content {
+        width: calc(100% - 360px);
+    }
+}
+
+@media screen and (max-width : 800px) {}
+
+@media screen and (max-width : 767px) {
+    .header-section p {
+        font-size: 13px;
+        line-height: 22px;
+        padding-left: 15px;
+    }
+
+    .header-section .btn {
+        font-size: 11px;
+        line-height: 24px;
+        min-width: 60px;
+        margin-left: 6px;
+        padding: 0 12px;
+    }
+
+    .header-section .dropdown-menu {
+        box-shadow: none;
+        margin-top: 0;
+    }
+
+    .search-banner-section {
+        padding-top: 30px;
+    }
+
+    .search-banner-section h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 14px !important;
+    }
+
+    .search-box .form-control {
+        padding: 10px 20px;
+    }
+
+    .search-box .custom-dropdown::after {
+        height: 38px;
+    }
+
+    .user-slider-section {
+        padding: 10px 50px 30px;
+    }
+
+    .owl-carousel .owl-nav button span {
+        background-size: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .dashboard-section {
+        padding: 30px 0 0;
+    }
+
+    .dashboard-section .item {
+        padding: 18px 40px 20px;
+        display: block !important;
+    }
+
+    .content-box {
+        padding: 0 0px 0 80px;
+        max-width: 100%;
+    }
+
+    .content-box h3 {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 0 0 12px;
+    }
+
+    .content-box p {
+        font-size: 13px;
+        padding: 0 0 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 0 14px;
+        line-height: 36px;
+    }
+
+    .image-box {
+        width: 100%;
+        position: relative;
+        margin: 20px auto 0;
+        max-width: 500px;
+    }
+
+    .feature-section {
+        padding: 30px 0 10px;
+    }
+
+    .feature-section .sub-head {
+        padding: 0 0 16px;
+    }
+
+    .faq-section {
+        padding: 30px 0;
+    }
+
+    .accordion-box .accordion-item {
+        margin-top: 12px;
+    }
+
+    .accordion-box .accordion-button {
+        padding: 12px 35px 12px 15px;
+    }
+
+    .footer-menu-list {
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    .menu-list h4 {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 0 10px;
+    }
+
+    .menu-list li {
+        padding: 0 0 6px;
+    }
+
+    .menu-list li a {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .second-footer {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    .footer-menu a {
+        margin: 0 4px;
+    }
+
+    .inner-sub-section {
+        padding: 30px 0 20px;
+    }
+
+    .inner-sub-section .content p {
+        font-size: 13px;
+        padding: 0 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .inner-sub-section > .d-flex {
+        display: block !important;
+    }
+
+    .inner-sub-section .image-box {
+        margin: 0 auto 20px;
+    }
+
+    .inner-sub-section .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .feature-section .box {
+        padding: 10px 20px 0 0;
+        margin-bottom: 15px;
+    }
+    .feature-section .box h4 {
+        min-height: inherit;
+    }
+
+    .feature-section .box p {
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 4px;
+    }
+
+    .footer-menu-list {
+        padding: 20px 0 10px;
+    }
+
+    .menu-list {
+        padding-bottom: 14px;
+    }
+
+    .back-to-top a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        bottom: 55px;
+    }
+
+    .back-to-top a img {
+       max-width: 12px;
+}
+}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 420px) {
+    .header-section .btn {
+        font-size: 11px;
+        margin: -1px 4px 0 0;
+    }
+}
